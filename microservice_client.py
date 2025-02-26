@@ -11,4 +11,5 @@ while True:
     city_request = input("city name to request weather data for: ")
     socket.send_string(city_request)
 
-    
+    response = socket.recv_string()
+    print(response)
